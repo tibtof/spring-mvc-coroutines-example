@@ -3,7 +3,7 @@
 `DemoController` uses https://github.com/joost-de-vries/spring-coroutine, but since that library 
 was published to bintray, I copied the class `SpringCoroutineScope` and dependencies here.
 
-The _/boomerang/{x}_ endpoint waits for `x` seconds waits for `x` seconds and returns `x` back.
+The _/boomerang/{x}_ endpoint waits for `x` seconds and then returns `x` back.
 If `x` is 0 then it throws an exception.
 
 Looking at the implementation I suspected that, by reusing the same scope instance in a Spring bean,
